@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Planteamiento del problema</title>
+<meta charset='utf-8' />
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' />
+<meta content='width=device-width,initial-scale=1' name='viewport' />
+<link rel='stylesheet' type='text/css' href='practica2-mec.css' />
+<meta content='practica2-mec.tex' name='src' />
+<script type='text/javascript' id='MathJax-script' async='async' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js'>
+</script>
+</head>
+<body>
+<nav class='breadcrumbs-bar'><span><a href='practica2-mec3.html'>Inicio</a> &gt;&nbsp;1&nbsp;<a href='#x4-10001'>Planteamiento del problema</a></span></nav>
+<nav class='controls-bar'>
+<nav class='prev'></nav>
+<nav class='next'><a href='practica2-mecse2.html'><span>❯</span></a></nav>
+</nav>
+<h3 class='sectionHead'><span class='titlemark'>1</span> <a href='practica2-mec2.html#QQ2-4-1' id='x4-10001'><span class='fakebreadcrumbs'> </span></a><span class='fakebreadcrumbs'> </span>Planteamiento del problema</h3>
+<!-- l. 165 -->
+<p class='noindent'>Hasta ahora hemos realizado un estudio teórico de las variables aleatorias. Y hemos aprendido a resolver problemas como el siguiente:</p>
+<div class='mdframed' id='mdframed-1'><!-- l. 169 -->
+<p class='noindent'>Sabemos que, para un determinado jugador de baloncesto, la probabilidad con que acierta un lanzamiento de tiro libre es <!-- l. 169 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</math>. Calcular la probabilidad de que, en una tanda de <!-- l. 169 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>50</mn>
+</math> lanzamientos, acierte como máximo <!-- l. 169 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>30</mn>
+</math> de ellos.</p>
+<!-- l. 170 -->
+<p class='noindent'></p>
+</div>
+<!-- l. 172 -->
+<p class='noindent'>Para resolver este problema, consideramos la variable aleatoria</p>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 172 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mi>X</mi>
+<mo class='MathClass-rel'>=</mo>
+<mstyle class='text'>
+<mtext>número&nbsp;de&nbsp;lanzamientos&nbsp;acertados.</mtext>
+</mstyle>
+</math></td>
+</tr>
+</table>
+<!-- l. 174 -->
+<p class='noindent'>Identificamos que <!-- l. 174 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>X</mi>
+</mrow>
+</math> sigue una distribución binomial de parámetros <!-- l. 175 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>n</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>50</mn>
+</mrow>
+</math> y <!-- l. 175 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>, abreviadamente <!-- l. 175 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>X</mi>
+<mo class='MathClass-rel'>∼</mo>
+<mi>B</mi>
+<mrow>
+<mo class='MathClass-open'>(</mo>
+<mrow>
+<mn>50</mn>
+<mo class='MathClass-punc'>,</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+<mo class='MathClass-close'>)</mo>
+</mrow>
+</mrow>
+</math>, y calculamos la probabilidad pedida como</p>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 178 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mi>P</mi>
+<mrow>
+<mo class='MathClass-open'>(</mo>
+<mrow>
+<mi>X</mi>
+<mo class='MathClass-rel'>≤</mo>
+<mn>30</mn>
+</mrow>
+<mo class='MathClass-close'>)</mo>
+</mrow>
+<mo class='MathClass-rel'>=</mo>
+<mi>F</mi>
+<mrow>
+<mo class='MathClass-open'>(</mo>
+<mrow>
+<mn>30</mn>
+</mrow>
+<mo class='MathClass-close'>)</mo>
+</mrow>
+<mo class='MathClass-rel'>=</mo>
+<mstyle class='text'>
+<mtext>pbinom(30,50,0.75)</mtext>
+</mstyle>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>01392</mn>
+<mo class='MathClass-punc'>.</mo>
+</math></td>
+</tr>
+</table>
+<!-- l. 182 -->
+<p class='noindent'>Ahora, en una situación real, lo más frecuente es que no conozcamos el valor <!-- l. 183 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math> para la probabilidad de acierto del jugador en el lanzamiento de tiros libres. Porque este valor <!-- l. 184 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> es un parámetro teórico, que interpretamos como la proporción de aciertos del jugador cuando el número de lanzamientos tiende a infinito. Para obtener el valor de <!-- l. 187 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> deberíamos observar los infinitos potenciales lanzamientos que podría efectuar el lanzador, situación imposible en la práctica. En consecuencia, el tipo de problema que se plantea en la práctica es más parecido al siguiente:</p>
+<div class='mdframed' id='mdframed-2'><!-- l. 193 -->
+<p class='noindent'>Un jugador afirma que su probabilidad de acertar un tiro libre es <!-- l. 193 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</math>. Sin embargo, cuestionamos su afirmación, y nos planteamos investigar el verdadero valor del parámetro</p>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 194 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mstyle class='text'>
+<mtext>probabilidad&nbsp;de&nbsp;que&nbsp;el&nbsp;jugador&nbsp;acierte&nbsp;un&nbsp;tiro&nbsp;libre</mtext>
+</mstyle>
+<mo class='MathClass-punc'>.</mo>
+</math></td>
+</tr>
+</table>
+<!-- l. 197 -->
+<p class='noindent'>Para ello, observamos el resultado de <!-- l. 197 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mn>50</mn>
+</math> lanzamientos efectuados por el jugador en cuestión, anotando en cada caso si acierta o falla. El objetivo es contrastrar si los datos observados resultan compatibles con la afirmación del jugador de que <!-- l. 197 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</math>.</p>
+<!-- l. 198 -->
+<p class='noindent'></p>
+</div>
+<!-- l. 200 -->
+<p class='noindent'>En el archivo enlazado a continuación se recogen los resultados de los <!-- l. 201 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos observados: <a href='https://drive.google.com//uc?export=download&amp;id=1pHbzwJ8uDj1W9wk0gPRxkudzpIwhskKA' target='_blank'>baloncesto.csv</a>.</p>
+<!-- l. 204 -->
+<p class='noindent'>En esta práctica exploraremos los datos obtenidos y estudiaremos cómo usarlos para obtener conclusiones o inferencias sobre el parámetro desconocido <!-- l. 206 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>.</p>
+<!-- l. 208 -->
+<p class='noindent'>En la Tarea 2, se pedirá resolver un problema muy similar al que se resuelve en esta práctica.</p>
+<!-- l. 211 -->
+<p class='noindent'>Crea un nuevo script en <span class='texttt'>RStudio</span> (<span class='texttt'>File&nbsp;&gt;&nbsp;New&nbsp;File&nbsp;&gt;&nbsp;R&nbsp;Script</span>) y guárda el script y el archivo <span class='texttt'>baloncesto.csv</span> en la misma ubicación. Utiliza el script creado para ir escribiendo y ejecutando los fragmentos de código que encuentres conforme leas este documento. Te servirá como plantilla para el script que tendrás que escribir para realizar la Tarea 2.</p>
+<!-- l. 219 -->
+<p class='noindent'></p>
+<div style='height:3em; width:10px; clear:both;'></div>
+</body>
+</html>

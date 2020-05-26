@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Diagrama de barras</title>
+<meta charset='utf-8' />
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' />
+<meta content='width=device-width,initial-scale=1' name='viewport' />
+<link rel='stylesheet' type='text/css' href='practica2-mec.css' />
+<meta content='practica2-mec.tex' name='src' />
+<script type='text/javascript' id='MathJax-script' async='async' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js'>
+</script>
+</head>
+<body>
+<nav class='breadcrumbs-bar'><span><a href='practica2-mec3.html'>Inicio</a> &gt;&nbsp;3&nbsp;<a href='#x6-30003'>Diagrama de barras</a></span></nav>
+<nav class='controls-bar'>
+<nav class='prev'><a href='practica2-mecse2.html'><span>❮</span></a></nav>
+<nav class='next'><a href='practica2-mecse4.html'><span>❯</span></a></nav>
+</nav>
+<h3 class='sectionHead'><span class='titlemark'>3</span> <a href='practica2-mec2.html#QQ2-6-3' id='x6-30003'><span class='fakebreadcrumbs'> </span></a><span class='fakebreadcrumbs'> </span>Diagrama de barras</h3>
+<!-- l. 344 -->
+<p class='noindent'>Ahora vamos a representar gráficamente los datos mediante un diagrama de barras. Para ello usaremos las funciones del paquete <span class='texttt'>ggplot2</span>. En primer lugar cargamos el paquete:</p>
+<div class='mdframed' id='mdframed-9'><!-- l. 349 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb7'><a id='x6-3002r1'></a><span id='textcolor15'><b>library</b></span><span class='ec-lmtt-12'>(ggplot2)</span></div>
+</div>
+<!-- l. 354 -->
+<p class='noindent'>Ahora ya están activas las funciones del paquete <span class='texttt'>ggplot2</span> y podemos realizar el gráfico. No hace falta que entiendas al detalle el siguiente código, sólo ejecútalo para ver el resultado. Después se dan unas explicaciones que son suficientes para saber cómo habría retocarlo para realizar un diagrama de barras para otros datos.</p>
+<div class='mdframed' id='mdframed-10'><!-- l. 361 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb8'><a id='x6-3004r1'></a><span id='textcolor16'><b>ggplot</b></span><span class='ec-lmtt-12'>(</span><br class='fancyvrb' />
+<a id='x6-3006r2'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor17'><span class='ec-lmtt-12'>data&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;datos,&nbsp;</span><br class='fancyvrb' />
+<a id='x6-3008r3'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor18'><span class='ec-lmtt-12'>mapping&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor19'><b>aes</b></span><span class='ec-lmtt-12'>(</span><span id='textcolor20'><span class='ec-lmtt-12'>x&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;resultado)</span><br class='fancyvrb' />
+<a id='x6-3010r4'></a><span class='ec-lmtt-12'>)&nbsp;</span><span id='textcolor21'><b>+</b></span><br class='fancyvrb' />
+<a id='x6-3012r5'></a><span id='textcolor22'><b>geom_bar</b></span><span class='ec-lmtt-12'>()</span></div>
+</div>
+<div class='center'><!-- l. 370 -->
+<p class='noindent'></p>
+<!-- l. 370 -->
+<p class='noindent'><img style='width:12.045em' alt='pict' src='practica2-mec_files/figure-latex/unnamed-chunk-12-1.png' /></p>
+</div>
+<ul class='itemize1'>
+<li class='itemize'>La función <span class='texttt'>ggplot</span> es de uso obligatorio para crear un gráfico. Determina la estructura del gráfico, creando el marco de partida para añadir el resto de componentes.
+<ul class='itemize2'>
+<li class='itemize'>El argumento <span class='texttt'>data&nbsp;=&nbsp;datos</span> le indica a <span class='texttt'>ggplot</span> que las variables a las que nos referiremos tiene que buscarlas en la hoja de datos de nombre <span class='texttt'>datos</span>. Una vez hecha esa especificación, podremos escribir <span class='texttt'>resultado</span> en lugar de <span class='texttt'>datos$resultado</span>.</li>
+<li class='itemize'>El argumento <span class='texttt'>mapping&nbsp;=&nbsp;aes(x&nbsp;=&nbsp;resultado)</span> describe la estética del gráfico (<span class='texttt'>aes</span> son iniciales de <span class='texttt'>aesthetics</span>). Con <span class='texttt'>x&nbsp;=&nbsp;resultado</span> pedimos que represente la variable <span class='texttt'>resultado</span> en el eje <!-- l. 391 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>X</mi>
+</mrow>
+</math>. Por eso en el eje <!-- l. 392 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>X</mi>
+</mrow>
+</math> hay una marca para cada uno de los dos posibles valores de la variable <span class='texttt'>resultado</span>, <span class='texttt'>'Acierto'</span> y <span class='texttt'>'Fallo'</span>. Sobre el eje <!-- l. 396 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>Y</mi>
+</mrow>
+</math> no indicamos nada, porque de ese eje se ocupará la función <span class='texttt'>geom_bar</span>.</li>
+</ul>
+</li>
+<li class='itemize'>Al añadir <span class='texttt'>+&nbsp;geom_bar()</span> al marco creado por <span class='texttt'>ggplot</span>, la función <span class='texttt'>geom_bar</span> se ocupa de contabilizar los aciertos y los fallos, y dibuja en cada caso una barra de altura igual al recuento correspondiente, en nuestro caso las alturas de las barras para <span class='texttt'>'Acierto'</span> y <span class='texttt'>'Fallo'</span> son <!-- l. 405 --><math display='inline' xmlns=
+'http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>28</mn>
+</mrow>
+</math> y <!-- l. 405 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>22</mn>
+</mrow>
+</math> respectivamente.</li>
+</ul>
+<!-- l. 409 -->
+<p class='noindent'>Con la siguiente instrucción se vuelve a realizar el gráfico anterior, pero añadiendo algunos extras para personalizar el gráfico:</p>
+<div class='mdframed' id='mdframed-11'><!-- l. 413 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb9'><a id='x6-3014r1'></a><span id='textcolor23'><b>ggplot</b></span><span class='ec-lmtt-12'>(</span><br class='fancyvrb' />
+<a id='x6-3016r2'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor24'><span class='ec-lmtt-12'>data&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;datos,&nbsp;</span><br class='fancyvrb' />
+<a id='x6-3018r3'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor25'><span class='ec-lmtt-12'>mapping&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor26'><b>aes</b></span><span class='ec-lmtt-12'>(</span><span id='textcolor27'><span class='ec-lmtt-12'>x&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;resultado)</span><br class='fancyvrb' />
+<a id='x6-3020r4'></a><span class='ec-lmtt-12'>)&nbsp;</span><span id='textcolor28'><b>+</b></span><br class='fancyvrb' />
+<a id='x6-3022r5'></a><span id='textcolor29'><b>geom_bar</b></span><span class='ec-lmtt-12'>(</span><span id='textcolor30'><span class='ec-lmtt-12'>fill=</span></span><span id='textcolor31'><span class='ec-lmtt-12'>"#7AA3E5"</span></span><span class='ec-lmtt-12'>)&nbsp;</span><span id='textcolor32'><b>+</b></span><span id='textcolor33'><span class='ec-lmtt-12'>&nbsp;</span></span><br class='fancyvrb' />
+<a id='x6-3024r6'></a><span id='textcolor34'><b>xlab</b></span><span class='ec-lmtt-12'>(</span><span id='textcolor35'><span class='ec-lmtt-12'>"Resultado"</span></span><span class='ec-lmtt-12'>)&nbsp;</span><span id='textcolor36'><b>+</b></span><span id='textcolor37'><span class='ec-lmtt-12'>&nbsp;</span></span><br class='fancyvrb' />
+<a id='x6-3026r7'></a><span id='textcolor38'><b>ylab</b></span><span class='ec-lmtt-12'>(</span><span id='textcolor39'><span class='ec-lmtt-12'>"Recuento"</span></span><span class='ec-lmtt-12'>)&nbsp;</span><span id='textcolor40'><b>+</b></span><span id='textcolor41'><span class='ec-lmtt-12'>&nbsp;</span></span><br class='fancyvrb' />
+<a id='x6-3028r8'></a><span id='textcolor42'><b>coord_flip</b></span><span class='ec-lmtt-12'>()</span></div>
+</div>
+<div class='center'><!-- l. 425 -->
+<p class='noindent'></p>
+<!-- l. 425 -->
+<p class='noindent'><img style='width:32.50896em' alt='pict' src='practica2-mec_files/figure-latex/barplot-1.png' /></p>
+</div>
+<!-- l. 427 -->
+<p class='noindent'>Los extras añadidos son:</p>
+<ul class='itemize1'>
+<li class='itemize'>se cambia el color de las barras (<span class='texttt'>fill="#7AA3E5"</span>),</li>
+<li class='itemize'>se incluyen los títulos <span class='texttt'>Resultado</span> y <span class='texttt'>Recuento</span> para los ejes (<span class='texttt'>xlab</span> e <span class='texttt'>ylab</span>),</li>
+<li class='itemize'>se cambia la orientación del gráfico a horizontal (<span class='texttt'>coord_flip</span>).</li>
+</ul>
+<!-- l. 441 -->
+<p class='noindent'>En la Tarea 2 tendrás que realizar un gráfico similar al anterior.</p>
+<!-- l. 443 -->
+<p class='noindent'></p>
+<div style='height:3em; width:10px; clear:both;'></div>
+</body>
+</html>

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Contraste de hipotesis</title>
+<meta charset='utf-8' />
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' />
+<meta content='width=device-width,initial-scale=1' name='viewport' />
+<link rel='stylesheet' type='text/css' href='practica2-mec.css' />
+<meta content='practica2-mec.tex' name='src' />
+<script type='text/javascript' id='MathJax-script' async='async' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js'>
+</script>
+</head>
+<body>
+<nav class='breadcrumbs-bar'><span><a href='practica2-mec3.html'>Inicio</a> &gt;&nbsp;4&nbsp;<a href='#x7-40004'>Contraste de hipótesis</a></span></nav>
+<nav class='controls-bar'>
+<nav class='prev'><a href='practica2-mecse3.html'><span>❮</span></a></nav>
+<nav class='next'></nav>
+</nav>
+<h3 class='sectionHead'><span class='titlemark'>4</span> <a href='practica2-mec2.html#QQ2-7-4' id='x7-40004'><span class='fakebreadcrumbs'> </span></a><span class='fakebreadcrumbs'> </span>Contraste de hipótesis</h3>
+<!-- l. 445 -->
+<p class='noindent'>Hasta ahora hemos descrito los datos numérica y gráficamente. Concretamente, hemos calculado la proporción de aciertos en la muestra, obteniendo el valor <!-- l. 447 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mover accent='false'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>56</mn>
+</mrow>
+</math> como estimación de <!-- l. 447 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>, la proporción de aciertos en la población teórica de todos los potenciales lanzamientos. Y hemos realizado un diagrama de barras de los recuentos de aciertos y fallos. Recordemos que nuestro objetivo es utilizar los datos observados para contrastar la afirmación <!-- l. 451 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math> del jugador. Con la exploración que hemos hecho de los datos, podemos concretar el objetivo planteando lo que en estadística se denomina un <b>contraste de hipótesis</b>.</p>
+<!-- l. 456 -->
+<p class='noindent'>Según el jugador la proporción verdadera es <!-- l. 456 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>. Y la estimación de <!-- l. 457 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> según nuestra muestra es <!-- l. 457 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mover accent='false'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>56</mn>
+</mrow>
+</math>. Así que la estimación proporcionada para <!-- l. 458 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> por nuestros datos es inferior al valor de <!-- l. 459 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> según el jugador. Como resaltamos antes, no podemos concluir con seguridad, basándonos en los datos obtenidos en la muestra de <!-- l. 461 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos, que el jugador mienta. Puede que el jugador diga la verdad, y que, por azar, hayamos observado una racha peor de lo habitual. Pero nuestros datos levantan la sospecha de que el jugador exagera, y nos sugieren que por el contrario <!-- l. 464 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>&lt;</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>. Esta hipótesis sugerida por los datos se denomina <b>hipótesis alternativa</b>, y se denota <!-- l. 466 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>1</mn>
+</mrow>
+</msub>
+</mrow>
+</math>. Y a la afirmación del jugador <!-- l. 466 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>, se le llama <b>hipótesis nula</b> y se denota <!-- l. 467 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+</mrow>
+</math>. Resumimos el contraste de hipótesis que planteamos escribiendo</p>
+<div class='mdframed' id='mdframed-12'>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 471 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mfenced open='{' separators close>
+<mrow>
+<mtable style align='axis' class='array' equalrows='false' columnlines='none none none' equalcolumns='false'>
+<mtr>
+<mtd class='array' columnalign='left'>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+<mo class='MathClass-punc'>:</mo>
+</mtd>
+<mtd class='array' columnalign='right'>
+<mi>p</mi>
+</mtd>
+<mtd class='array' columnalign='center'>
+<mo class='MathClass-rel'>=</mo>
+</mtd>
+<mtd class='array' columnalign='left'>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd class='array' columnalign='left'>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>1</mn>
+</mrow>
+</msub>
+<mo class='MathClass-punc'>:</mo>
+</mtd>
+<mtd class='array' columnalign='right'>
+<mi>p</mi>
+</mtd>
+<mtd class='array' columnalign='center'>
+<mo class='MathClass-rel'>&lt;</mo>
+</mtd>
+<mtd class='array' columnalign='left'>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+<mo class='MathClass-punc'>.</mo>
+</mtd>
+</mtr>
+<!-- lrcl --></mtable>
+</mrow>
+</mfenced>
+</math></td>
+</tr>
+</table>
+</div>
+<!-- l. 481 -->
+<p class='noindent'>Vamos a resolver el conflicto, entre la afirmación del jugador <!-- l. 481 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+</mrow>
+</math>, y la hipótesis alternativa <!-- l. 482 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>1</mn>
+</mrow>
+</msub>
+</mrow>
+</math> que sugieren los datos, contestando a a la pregunta siguiente:</p>
+<div class='mdframed' id='mdframed-13'><!-- l. 486 -->
+<p class='noindent'>Si la realidad fuera que <!-- l. 486 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</math> (el jugador dice la verdad) ¿cuál es la probabilidad de observar una racha tan mala como la observada o peor?</p>
+<!-- l. 487 -->
+<p class='noindent'></p>
+</div>
+<!-- l. 489 -->
+<p class='noindent'>Respondiendo a esta pregunta, cuantificaremos la sospecha que han levantado nuestros datos y que provocó la formulación de la hipótesis alternativa.</p>
+<!-- l. 493 -->
+<p class='noindent'>Si la respuesta es que la probabilidad es muy baja, tomaremos la decisión de acusar de mentiroso al jugador y nos decantaremos por la hipótesis alternativa de que <!-- l. 495 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>&lt;</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>. Si por el contrario la probabilidad no es muy baja, lo dejaremos estar y no acusaremos al jugador de mentiroso, pensaremos que los datos observados pueden deberse al azar y no a que el jugador mienta.</p>
+<!-- l. 500 -->
+<p class='noindent'>Adoptaremos una actitud conservadora, y fijaremos el umbral de lo que consideramos una probabilidad muy baja en <!-- l. 501 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>. De esta manera, si los datos observados tienen una probabilidad superior a <!-- l. 502 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>, no acusaremos de mentiroso al jugador. Esta probabilidad se llama <b>nivel de significación</b> del contraste y se denota <!-- l. 504 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+</mrow>
+</math>. Lo más frecuente en el ámbito científico es trabajar con este nivel de significación <!-- l. 506 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>, pero también pueden convenirse otros valores como <!-- l. 507 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>01</mn>
+</mrow>
+</math>.</p>
+<!-- l. 509 -->
+<p class='noindent'>El procedimiento estadístico con el que se resuelve el contraste de hipótesis que hemos planteado y se calcula la probabilidad que buscamos se llama <b>test binomial exacto</b>. El comando de <span class='texttt'>R</span> que lo lleva a cabo es <span class='texttt'>binom.test</span>. Concretamente para resolver nuestro contraste tenemos que ejecutar:</p>
+<div class='mdframed' id='mdframed-14'><!-- l. 516 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb10'><a id='x7-4002r1'></a><span id='textcolor43'><b>binom.test</b></span><span class='ec-lmtt-12'>(</span><br class='fancyvrb' />
+<a id='x7-4004r2'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor44'><span class='ec-lmtt-12'>x&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor45'><span class='ec-lmtt-12'>28</span></span><span class='ec-lmtt-12'>,</span><br class='fancyvrb' />
+<a id='x7-4006r3'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor46'><span class='ec-lmtt-12'>n&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor47'><span class='ec-lmtt-12'>50</span></span><span class='ec-lmtt-12'>,</span><br class='fancyvrb' />
+<a id='x7-4008r4'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor48'><span class='ec-lmtt-12'>p&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor49'><span class='ec-lmtt-12'>0.75</span></span><span class='ec-lmtt-12'>,</span><br class='fancyvrb' />
+<a id='x7-4010r5'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor50'><span class='ec-lmtt-12'>alternative&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor51'><span class='ec-lmtt-12'>"less"</span></span><br class='fancyvrb' />
+<a id='x7-4012r6'></a><span class='ec-lmtt-12'>)</span></div>
+</div>
+<div class='verbatim' id='verbatim-4'>## &nbsp;<br />
+##&nbsp;&nbsp;Exact&nbsp;binomial&nbsp;test &nbsp;<br />
+## &nbsp;<br />
+##&nbsp;data:&nbsp;&nbsp;28&nbsp;and&nbsp;50 &nbsp;<br />
+##&nbsp;number&nbsp;of&nbsp;successes&nbsp;=&nbsp;28,&nbsp;number&nbsp;of&nbsp;trials&nbsp;=&nbsp;50,&nbsp;p-value&nbsp;=&nbsp;0.0026 &nbsp;<br />
+##&nbsp;alternative&nbsp;hypothesis:&nbsp;true&nbsp;probability&nbsp;of&nbsp;success&nbsp;is&nbsp;less&nbsp;than&nbsp;0.75 &nbsp;<br />
+##&nbsp;95&nbsp;percent&nbsp;confidence&nbsp;interval: &nbsp;<br />
+##&nbsp;&nbsp;0.00000&nbsp;0.68017 &nbsp;<br />
+##&nbsp;sample&nbsp;estimates: &nbsp;<br />
+##&nbsp;probability&nbsp;of&nbsp;success &nbsp;<br />
+##&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.56</div>
+<!-- l. 538 -->
+<p class='nopar'></p>
+<!-- l. 540 -->
+<p class='noindent'>Los argumentos <span class='texttt'>x&nbsp;=&nbsp;28</span> y <span class='texttt'>n&nbsp;=&nbsp;50</span> indican que hemos observado <!-- l. 541 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>28</mn>
+</mrow>
+</math> aciertos en <!-- l. 541 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos. Con el argumento <span class='texttt'>p&nbsp;=&nbsp;0.75</span> indicamos que queremos comparar nuestros datos con el valor de referencia <!-- l. 543 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math> de la hipótesis nula. Y el argumento <span class='texttt'>alternative&nbsp;=&nbsp;"less"</span> indica que nuestra hipótesis alternativa es que <!-- l. 545 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> es menor que el valor umbral <!-- l. 545 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>.</p>
+<!-- l. 547 -->
+<p class='noindent'>La probabilidad que buscamos la encontramos en el fragmento de la salida</p>
+<div class='centerline'><span class='ec-lmtt-12'>p-value = 0.0026.</span></div>
+<!-- l. 551 -->
+<p class='noindent'>Esta probabilidad 0.0026 asociada a nuestro contraste de hipótesis se denomina <b><!-- l. 552 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mstyle mathvariant='bold'>
+<mi>p</mi>
+</mstyle>
+</mrow>
+</math>-valor</b>. La letra <!-- l. 552 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> en <!-- l. 552 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor es inicial de probabilidad, no tiene que ver con que estemos realizando un contraste de hipótesis sobre el parámetro <!-- l. 554 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> (en la siguiente práctica plantearemos un contraste de hipótesis para una media y también hablaremos del <!-- l. 556 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor de ese nuevo contraste). Utilizaremos el <!-- l. 557 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor para decidir entre las hipótesis contrastadas, esto es, entre la hipótesis nula <!-- l. 558 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math> y la hipótesis alternativa sugerida por los datos <!-- l. 559 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>&lt;</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>.</p>
+<!-- l. 561 -->
+<p class='noindent'>El <!-- l. 561 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor <!-- l. 561 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>0026</mn>
+</mrow>
+</math> que hemos obtenido con la función <span class='texttt'>binom.test</span> cuantifica nuestra sospecha de que <!-- l. 562 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>&lt;</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>, en el sentido que se explica a continuación: Si fuera verdad que <!-- l. 563 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>, la probabilidad de observar en <!-- l. 564 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos una racha tan mala o peor como la de nuestra muestra sería de <!-- l. 565 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>0026</mn>
+</mrow>
+</math>. Dicho con otras palabras: si repetimos un gran número de veces el experimento (observar otros <!-- l. 567 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos y contabilizar los aciertos), en aproximadamente <!-- l. 568 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>26</mn>
+</mrow>
+</math> de cada <!-- l. 568 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>10000</mn>
+</mrow>
+</math> repeticiones observaríamos un resultado tan desfavorable como acertar tan sólo <!-- l. 569 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>28</mn>
+</mrow>
+</math> de los <!-- l. 569 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos.</p>
+<!-- l. 572 -->
+<p class='noindent'>En realidad, con las explicaciones anteriores, que describen el significado del <!-- l. 573 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor, y la teoría que conoces de variables aleatorias, tienes herramientas suficientes para saber cómo se ha calculado el <!-- l. 575 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor <!-- l. 575 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>0026</mn>
+</mrow>
+</math>: se obtiene como</p>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 575 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mi>P</mi>
+<mrow>
+<mo class='MathClass-open'>(</mo>
+<mrow>
+<mi>X</mi>
+<mo class='MathClass-rel'>≤</mo>
+<mn>28</mn>
+</mrow>
+<mo class='MathClass-close'>)</mo>
+</mrow>
+<mo class='MathClass-rel'>=</mo>
+<mi>F</mi>
+<mrow>
+<mo class='MathClass-open'>(</mo>
+<mrow>
+<mn>28</mn>
+</mrow>
+<mo class='MathClass-close'>)</mo>
+</mrow>
+<mo class='MathClass-rel'>=</mo>
+<mstyle class='text'>
+<mtext>pbinom(28,50,0.75)</mtext>
+</mstyle>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>0026</mn>
+<mo class='MathClass-punc'>.</mo>
+</math></td>
+</tr>
+</table>
+<!-- l. 579 -->
+<p class='noindent'>Recordemos que habíamos decidido adoptar una actitud conservadora, de manera que no acusaríamos al jugador de mentiroso a no ser que, en el supuesto de que diga la verdad, los datos obtenidos tuvieran una probabilidad inferior a <!-- l. 582 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>. La probabilidad obtenida ha sido <!-- l. 583 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>0026</mn>
+</mrow>
+</math>, mucho menor que nuestro “umbral del credulidad” o nivel de significación <!-- l. 584 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>. Así que nuestra conclusión es que rechazamos la afirmación del jugador en favor de nuestra hipótesis alternativa de que <!-- l. 586 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>&lt;</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>.</p>
+<!-- l. 588 -->
+<p class='noindent'>Ahora, nunca sabremos si nos hemos equivocado en nuestra decisión. Como hemos trabajado con un umbral de credulidad del <!-- l. 589 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>5</mn>
+<mi>%</mi>
+</mrow>
+</math>, podríamos decir que tenemos una confianza del <!-- l. 590 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>95</mn>
+<mi>%</mi>
+</mrow>
+</math> en que nuestra decisión es correcta. Esto es así porque sólo corremos el riesgo de equivocarnos en el <!-- l. 592 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>5</mn>
+<mi>%</mi>
+</mrow>
+</math> de las ocasiones en que, siendo verdad la afirmación del jugador, la mala racha se deba al azar. Esta incertimdumbre acompaña a cualquier conclusión de un procedimiento de inferencia estadística. Hay que tomárselo con humor, como los autores de las siguientes viñetas.</p>
+<div class='center'><!-- l. 597 -->
+<p class='noindent'></p>
+<!-- l. 598 -->
+<p class='noindent'><img style='width:27.14095em' alt='pict' src='graficos/HowToLieWithStatistics.png' /></p>
+<figcaption class='caption'><span class='id'>Figura&nbsp;1:</span><span class='content'>Portada del libro <span class='ec-lmri-12'>How to Lie with Statistics</span>, de Darrell Huff</span></figcaption>
+<!-- tex4ht:label?: x7-40004  --></div>
+<div class='center'><!-- l. 603 -->
+<p class='noindent'></p>
+<!-- l. 604 -->
+<p class='noindent'><img style='width:35.57571em' alt='pict' src='graficos/dilbertc.png' /></p>
+<figcaption class='caption'><span class='id'>Figura&nbsp;2:</span><span class='content'>Viñeta de la tira cómica <i>Dilbert</i>, de Scott Adams</span></figcaption>
+<!-- tex4ht:label?: x7-40004  --></div>
+<!-- l. 609 -->
+<p class='noindent'><b>Nota (importante para entender el caso general):</b> Si en los <!-- l. 610 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos hubiéramos obtenido <!-- l. 610 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>40</mn>
+</mrow>
+</math> aciertos, entonces la proporción muestral sería</p>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 611 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mover accent='true'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>40</mn>
+<mo class='MathClass-bin'>∕</mo>
+<mn>50</mn>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>8</mn>
+<mo class='MathClass-punc'>.</mo>
+</math></td>
+</tr>
+</table>
+<!-- l. 613 -->
+<p class='noindent'>En ese caso plantearíamos el contraste de hipótesis</p>
+<div class='mdframed' id='mdframed-15'>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 616 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mfenced open='{' separators close>
+<mrow>
+<mtable style align='axis' class='array' equalrows='false' columnlines='none none none' equalcolumns='false'>
+<mtr>
+<mtd class='array' columnalign='left'>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+<mo class='MathClass-punc'>:</mo>
+</mtd>
+<mtd class='array' columnalign='right'>
+<mi>p</mi>
+</mtd>
+<mtd class='array' columnalign='center'>
+<mo class='MathClass-rel'>=</mo>
+</mtd>
+<mtd class='array' columnalign='left'>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mtd>
+</mtr>
+<mtr>
+<mtd class='array' columnalign='left'>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>1</mn>
+</mrow>
+</msub>
+<mo class='MathClass-punc'>:</mo>
+</mtd>
+<mtd class='array' columnalign='right'>
+<mi>p</mi>
+</mtd>
+<mtd class='array' columnalign='center'>
+<mo class='MathClass-rel'>&gt;</mo>
+</mtd>
+<mtd class='array' columnalign='left'>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+<mo class='MathClass-punc'>.</mo>
+</mtd>
+</mtr>
+<!-- lrcl --></mtable>
+</mrow>
+</mfenced>
+</math></td>
+</tr>
+</table>
+</div>
+<!-- l. 626 -->
+<p class='noindent'>puesto que ahora los datos sugieren como hipótesis alternativa que la probabilidad de acierto es superior al valor <!-- l. 627 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math> indicado por el jugador. La hipótesis alternativa siempre es la sugerida por los datos. Y al realizar el contraste de hipótesis valoramos si los datos arrojan suficiente evidencia como para extrapolar lo observado en la muestra (<!-- l. 631 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mover accent='true'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>8</mn>
+<mo class='MathClass-rel'>&gt;</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>) a la población (<!-- l. 631 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+<mo class='MathClass-rel'>&gt;</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>).</p>
+<!-- l. 633 -->
+<p class='noindent'>El código de <span class='texttt'>R</span> para realizar el nuevo contraste y calcular su <!-- l. 634 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor sería</p>
+<div class='mdframed' id='mdframed-16'><!-- l. 637 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb11'><a id='x7-4014r1'></a><span id='textcolor52'><b>binom.test</b></span><span class='ec-lmtt-12'>(</span><br class='fancyvrb' />
+<a id='x7-4016r2'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor53'><span class='ec-lmtt-12'>x&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor54'><span class='ec-lmtt-12'>40</span></span><span class='ec-lmtt-12'>,</span><br class='fancyvrb' />
+<a id='x7-4018r3'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor55'><span class='ec-lmtt-12'>n&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor56'><span class='ec-lmtt-12'>50</span></span><span class='ec-lmtt-12'>,</span><br class='fancyvrb' />
+<a id='x7-4020r4'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor57'><span class='ec-lmtt-12'>p&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor58'><span class='ec-lmtt-12'>0.75</span></span><span class='ec-lmtt-12'>,</span><br class='fancyvrb' />
+<a id='x7-4022r5'></a><span class='ec-lmtt-12'>&nbsp;&nbsp;&nbsp;&nbsp;</span><span id='textcolor59'><span class='ec-lmtt-12'>alternative&nbsp;=</span></span><span class='ec-lmtt-12'>&nbsp;</span><span id='textcolor60'><span class='ec-lmtt-12'>"greater"</span></span><br class='fancyvrb' />
+<a id='x7-4024r6'></a><span class='ec-lmtt-12'>)</span></div>
+</div>
+<div class='verbatim' id='verbatim-5'>## &nbsp;<br />
+##&nbsp;&nbsp;Exact&nbsp;binomial&nbsp;test &nbsp;<br />
+## &nbsp;<br />
+##&nbsp;data:&nbsp;&nbsp;40&nbsp;and&nbsp;50 &nbsp;<br />
+##&nbsp;number&nbsp;of&nbsp;successes&nbsp;=&nbsp;40,&nbsp;number&nbsp;of&nbsp;trials&nbsp;=&nbsp;50,&nbsp;p-value&nbsp;=&nbsp;0.3 &nbsp;<br />
+##&nbsp;alternative&nbsp;hypothesis:&nbsp;true&nbsp;probability&nbsp;of&nbsp;success&nbsp;is&nbsp;greater&nbsp;than&nbsp;0.75 &nbsp;<br />
+##&nbsp;95&nbsp;percent&nbsp;confidence&nbsp;interval: &nbsp;<br />
+##&nbsp;&nbsp;0.6844&nbsp;1.0000 &nbsp;<br />
+##&nbsp;sample&nbsp;estimates: &nbsp;<br />
+##&nbsp;probability&nbsp;of&nbsp;success &nbsp;<br />
+##&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.8</div>
+<!-- l. 659 -->
+<p class='nopar'></p>
+<!-- l. 661 -->
+<p class='noindent'>Al ser el <!-- l. 661 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor <!-- l. 661 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>3</mn>
+</mrow>
+</math> superior a <!-- l. 661 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>, no podríamos rechazar la hipótesis nula en favor de la hipótesis alternativa y concluir que la probabilidad de aciertos del jugador es superior a <!-- l. 664 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>. Creeríamos simplemente que, por azar, hemos observado una racha de <!-- l. 665 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos un poco mejor de lo habitual para el jugador. No nos resulta extraña la racha observada porque la probabilidad de obtener una racha así de buena o mejor, siendo la verdadera probabilidad de acierto <!-- l. 668 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>75</mn>
+</mrow>
+</math>, es <!-- l. 668 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>3</mn>
+</mrow>
+</math>, el <!-- l. 668 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor.</p>
+<!-- l. 670 -->
+<p class='noindent'>La interpretación general del <!-- l. 670 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor de un contraste de hipótesis es que es la probabilidad de obtener unos datos tan extremos como el observado (extremos en el sentido de ir a favor de la hipótesis alternativa) siendo la hipótesis nula cierta. Por eso cuando el <!-- l. 674 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor es muy pequeño, menor que el valor de referencia <!-- l. 675 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>, rechazamos la hipótesis nula en favor de la alternativa, al parecernos muy extraño que los datos observados se deban al azar. Mientras que cuando el <!-- l. 677 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>-valor es superior a <!-- l. 678 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math>, adoptamos la postura conservadora de no rechazar la hipótesis nula, asumiendo que hemos observado datos extremos por azar.</p>
+<!-- l. 681 -->
+<p class='noindent'>Una analogía útil para entender la filosofía de un contraste de hipótesis es pensar que se trata de un juicio, comparando la hipótesis nula <!-- l. 683 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>0</mn>
+</mrow>
+</msub>
+</mrow>
+</math> con la presunción de inocencia, y la hipótesis nula <!-- l. 683 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<msub>
+<mrow>
+<mi>H</mi>
+</mrow>
+<mrow>
+<mn>1</mn>
+</mrow>
+</msub>
+</mrow>
+</math> con la acusación de culpabilidad sugerida por las pruebas. Solo cuando las pruebas arrojan la suficiente evidencia, abandonaremos la presunción de inocencia inicial para dictar una acusación de culpabilidad. Adoptamos la actituld conservadora de considerar que las pruebas arrojan suficiente evidencia de culpabilidad cuando su probabilidad fuera a inferior a <!-- l. 689 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>α</mi>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>05</mn>
+</mrow>
+</math> si la persona juzgada fuera inocente.</p>
+<div style='height:3em; width:10px; clear:both;'></div>
+</body>
+</html>

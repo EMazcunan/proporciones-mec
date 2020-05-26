@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+<meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.2.0" />
+<title>Proporcion muestral</title>
+<meta charset='utf-8' />
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' />
+<meta content='width=device-width,initial-scale=1' name='viewport' />
+<link rel='stylesheet' type='text/css' href='practica2-mec.css' />
+<meta content='practica2-mec.tex' name='src' />
+<script type='text/javascript' id='MathJax-script' async='async' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js'>
+</script>
+</head>
+<body>
+<nav class='breadcrumbs-bar'><span><a href='practica2-mec3.html'>Inicio</a> &gt;&nbsp;2&nbsp;<a href='#x5-20002'>Proporción muestral</a></span></nav>
+<nav class='controls-bar'>
+<nav class='prev'><a href='practica2-mecse1.html'><span>❮</span></a></nav>
+<nav class='next'><a href='practica2-mecse3.html'><span>❯</span></a></nav>
+</nav>
+<h3 class='sectionHead'><span class='titlemark'>2</span> <a href='practica2-mec2.html#QQ2-5-2' id='x5-20002'><span class='fakebreadcrumbs'> </span></a><span class='fakebreadcrumbs'> </span>Proporción muestral</h3>
+<!-- l. 221 -->
+<p class='noindent'>Comenzamos importando en <span class='texttt'>RStudio</span> el archivo <span class='texttt'>baloncesto.csv</span>, y guardando sus contenidos en una hoja de datos de nombre <span class='texttt'>datos</span> con la siguiente instrucción:</p>
+<div class='mdframed' id='mdframed-3'><!-- l. 226 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb1'><a id='x5-2002r1'></a><span class='ec-lmtt-12'>datos&nbsp;&lt;-</span><span id='textcolor1'><span class='ec-lmtt-12'>&nbsp;</span></span><span id='textcolor2'><b>read.csv</b></span><span class='ec-lmtt-12'>(</span><span id='textcolor3'><span class='ec-lmtt-12'>"baloncesto.csv"</span></span><span class='ec-lmtt-12'>)</span></div>
+</div>
+<!-- l. 231 -->
+<p class='noindent'>Para que <span class='texttt'>R</span> encuentre el archivo <span class='texttt'>baloncesto.csv</span>, sin especificar su ruta completa, y funcione la instrucción previa, el directorio de trabajo debe ser el directorio en el que hayas descargado el archivo <span class='texttt'>baloncesto.csv</span> y hayas guardado el script. Recuerda que esto se consigue usando el menú</p>
+<div class='centerline'>‘Session &gt; Set Working Directory &gt; to Source File Location‘.</div>
+<!-- l. 239 -->
+<p class='noindent'>Visualizamos ahora los contenidos de la hoja de datos que acabamos de crear:</p>
+<div class='mdframed' id='mdframed-4'><!-- l. 243 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb2'><a id='x5-2004r1'></a><span id='textcolor4'><b>View</b></span><span class='ec-lmtt-12'>(datos)&nbsp;</span><span id='textcolor5'><i>#&nbsp;se&nbsp;abrirá&nbsp;una&nbsp;nueva&nbsp;pestaña</i></span></div>
+</div>
+<!-- l. 248 -->
+<p class='noindent'>Verás que la hoja de datos tiene una única variable, de nombre <span class='texttt'>resultado</span>, en la que se indica el resultado observado,<span class='texttt'>'Acierto'</span> o <span class='texttt'>'Fallo'</span>, para cada uno de los <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos.</p>
+<!-- l. 254 -->
+<p class='noindent'>Extraemos la variable <span class='texttt'>resultado</span> y la almacenamos en un vector de nombre <span class='texttt'>muestra</span>, con la siguiente instrucción:</p>
+<div class='mdframed' id='mdframed-5'><!-- l. 258 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb3'><a id='x5-2006r1'></a><span class='ec-lmtt-12'>muestra&nbsp;&lt;-</span><span id='textcolor6'><span class='ec-lmtt-12'>&nbsp;</span></span><span class='ec-lmtt-12'>datos</span><span id='textcolor7'><b>$</b></span><span class='ec-lmtt-12'>resultado</span></div>
+</div>
+<!-- l. 263 -->
+<p class='noindent'>Si quieres comprobar que el vector se ha creado correctamente escribe <span class='texttt'>print(muestra)</span> o simplemente <span class='texttt'>muestra</span>.</p>
+<!-- l. 266 -->
+<p class='noindent'>Para contabilizar el número de aciertos y fallos en el vector <span class='texttt'>muestra</span> utilizamos la función <span class='texttt'>table</span>. Guardamos la salida en un objeto de nombre <span class='texttt'>recuentos</span>:</p>
+<div class='mdframed' id='mdframed-6'><!-- l. 271 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb4'><a id='x5-2008r1'></a><span class='ec-lmtt-12'>recuentos&nbsp;&lt;-</span><span id='textcolor8'><span class='ec-lmtt-12'>&nbsp;</span></span><span id='textcolor9'><b>table</b></span><span class='ec-lmtt-12'>(muestra)</span><br class='fancyvrb' />
+<a id='x5-2010r2'></a><span class='ec-lmtt-12'>recuentos</span></div>
+</div>
+<div class='verbatim' id='verbatim-1'>##&nbsp;muestra &nbsp;<br />
+##&nbsp;Acierto&nbsp;&nbsp;&nbsp;Fallo &nbsp;<br />
+##&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22</div>
+<!-- l. 281 -->
+<p class='nopar'></p>
+<!-- l. 283 -->
+<p class='noindent'>En la salida de la última instrucción vemos que el jugador acertó <!-- l. 283 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>28</mn>
+</mrow>
+</math> de los <!-- l. 284 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos realizados.</p>
+<!-- l. 286 -->
+<p class='noindent'>Recordemos que nuestro objetivo es estimar el valor teórico de la probabilidad o proporción de aciertos <!-- l. 287 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> del jugador. Una forma natural de hacerlo es calcular la proporción de aciertos en nuestra muestra de <!-- l. 289 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos. Esto lo hace la función <span class='texttt'>prop.table</span>, aplicada a la tabla de recuentos:</p>
+<div class='mdframed' id='mdframed-7'><!-- l. 293 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb5'><a id='x5-2012r1'></a><span class='ec-lmtt-12'>proporciones&nbsp;&lt;-</span><span id='textcolor10'><span class='ec-lmtt-12'>&nbsp;</span></span><span id='textcolor11'><b>prop.table</b></span><span class='ec-lmtt-12'>(recuentos)</span><br class='fancyvrb' />
+<a id='x5-2014r2'></a><span class='ec-lmtt-12'>proporciones</span></div>
+</div>
+<div class='verbatim' id='verbatim-2'>##&nbsp;muestra &nbsp;<br />
+##&nbsp;Acierto&nbsp;&nbsp;&nbsp;Fallo &nbsp;<br />
+##&nbsp;&nbsp;&nbsp;&nbsp;0.56&nbsp;&nbsp;&nbsp;&nbsp;0.44</div>
+<!-- l. 303 -->
+<p class='nopar'></p>
+<!-- l. 305 -->
+<p class='noindent'>Vemos que, en la muestra de <!-- l. 305 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos, hemos observado una proporción de aciertos de <!-- l. 306 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>56</mn>
+</mrow>
+</math> (resultado del cociente <!-- l. 306 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>28</mn>
+<mo class='MathClass-bin'>∕</mo>
+<mn>50</mn>
+</mrow>
+</math>). Este valor se denomina <b>proporción muestral</b> y se denota <!-- l. 308 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mover accent='false'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+</mrow>
+</math>, porque nos da una idea aproximada de cuál puede ser el verdadero valor del valor teórico <!-- l. 309 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>, que se llama <b>proporción poblacional</b>. Se escribe</p>
+<table class='equation-star'>
+<tr>
+<td><!-- l. 310 --><math xmlns='http://www.w3.org/1998/Math/MathML' display='block' class='equation'>
+<mover accent='false'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>56</mn>
+<mo class='MathClass-punc'>.</mo>
+</math></td>
+</tr>
+</table>
+<!-- l. 314 -->
+<p class='noindent'>Hay que tener claro que la proporción muestral <!-- l. 314 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mover accent='false'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>56</mn>
+</mrow>
+</math> nos proporciona una estimación de la proporción poblacional <!-- l. 315 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math>, pero que el verdadero valor de <!-- l. 316 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> sigue siendo desconocido. El verdadero valor de <!-- l. 317 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> es la probabilidad de que el jugador acierte un tiro libre, que identificamos con la proporción de aciertos en el conjunto ideal de los infinitos lanzamientos que podría efectuar el jugador. Por su parte, el valor <!-- l. 320 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mover accent='false'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>56</mn>
+</mrow>
+</math> es tan sólo la proporción de aciertos en los <!-- l. 321 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos que hemos observado. Podría ser que los <!-- l. 321 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>50</mn>
+</mrow>
+</math> lanzamientos observados sean una “mala racha”, y que el verdadero valor de la proporción de aciertos <!-- l. 323 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mi>p</mi>
+</mrow>
+</math> sea superior a <!-- l. 324 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mover accent='false'>
+<mrow>
+<mi>p</mi>
+</mrow>
+<mo accent='true'>̂</mo>
+</mover>
+<mo class='MathClass-rel'>=</mo>
+<mn>0</mn>
+<mo class='MathClass-punc'>.</mo>
+<mn>56</mn>
+</mrow>
+</math>.</p>
+<!-- l. 326 -->
+<p class='noindent'>Si queremos porcentajes en lugar de proporciones, no tenemos más que multiplicar por <!-- l. 327 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mrow>
+<mn>100</mn>
+</mrow>
+</math>.</p>
+<div class='mdframed' id='mdframed-8'><!-- l. 330 -->
+<p class='noindent'></p>
+<div class='fancyvrb' id='fancyvrb6'><a id='x5-2016r1'></a><span class='ec-lmtt-12'>porcentajes&nbsp;&lt;-</span><span id='textcolor12'><span class='ec-lmtt-12'>&nbsp;</span></span><span id='textcolor13'><span class='ec-lmtt-12'>100</span></span><span id='textcolor14'><b>*</b></span><span class='ec-lmtt-12'>proporciones</span><br class='fancyvrb' />
+<a id='x5-2018r2'></a><span class='ec-lmtt-12'>porcentajes</span></div>
+</div>
+<div class='verbatim' id='verbatim-3'>##&nbsp;muestra &nbsp;<br />
+##&nbsp;Acierto&nbsp;&nbsp;&nbsp;Fallo &nbsp;<br />
+##&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;56&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44</div>
+<!-- l. 340 -->
+<p class='nopar'></p>
+<!-- l. 342 -->
+<p class='noindent'></p>
+<div style='height:3em; width:10px; clear:both;'></div>
+</body>
+</html>
